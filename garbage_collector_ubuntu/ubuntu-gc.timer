@@ -1,0 +1,10 @@
+[Unit]
+Description=Run safe Ubuntu cache cleanup every five minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=5min
+Unit=ubuntu-gc.service
+
+[Install]
+WantedBy=timers.target

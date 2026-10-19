@@ -1,0 +1,6 @@
+[Unit]
+Description=Safe per-user Ubuntu cache cleanup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/.local/bin/ubuntu_gc.py
